@@ -6,7 +6,7 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 
 ```
 CSES/
-├── Introductory_Problems/     # Basic algorithmic problems (13/13)
+├── Introductory_Problems/     # Basic algorithmic problems (13/19)
 ├── Sorting_and_Searching/     # Array and search problems (4/35)
 ├── Dynamic_Programming/       # DP problems (0/19)
 ├── Graph_Algorithms/         # Graph theory problems (0/36)
@@ -20,9 +20,9 @@ CSES/
 
 ## Progress Overview
 
-**Total Solved: 17/300** 🎯
+**Total Solved: 17/323** 🎯
 
-### [Introductory Problems](Introductory_Problems/) - 13/13 ✅
+### [Introductory Problems](Introductory_Problems/) - 13/19 🔄
 - [x] Weird Algorithm
 - [x] Missing Number  
 - [x] Repetitions
@@ -36,6 +36,12 @@ CSES/
 - [x] Coin Piles
 - [x] Palindrome Reorder
 - [x] Gray Code
+- [ ] Tower of Hanoi
+- [ ] Creating Strings
+- [ ] Apple Division
+- [ ] Chessboard and Queens
+- [ ] Digit Queries
+- [ ] Grid Paths
 
 ### [Sorting and Searching](Sorting_and_Searching/) - 4/35 🔄
 - [x] Distinct Numbers

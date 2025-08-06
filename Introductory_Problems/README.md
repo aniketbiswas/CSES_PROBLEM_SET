@@ -2,7 +2,7 @@
 
 This section contains basic algorithmic thinking and implementation problems.
 
-## Problems Solved
+## Problems Solved (13/19)
 
 1. **Weird Algorithm** (`WeirdAlgo.cpp`) - Collatz conjecture simulation
 2. **Missing Number** (`MissingNumber.cpp`) - Find missing number in sequence
@@ -17,6 +17,15 @@ This section contains basic algorithmic thinking and implementation problems.
 11. **Coin Piles** (`CoinPiles.cpp`) - Determine if coin piles can be emptied
 12. **Palindrome Reorder** (`ReorderPalindrome.cpp`) - Rearrange string to palindrome
 13. **Gray Code** (`GrayCode.cpp`) - Generate Gray code sequence
+
+## Problems Remaining (6)
+
+14. **Tower of Hanoi** - Classic recursive problem
+15. **Creating Strings** - Generate all permutations of string
+16. **Apple Division** - Minimize difference between two groups
+17. **Chessboard and Queens** - N-queens problem
+18. **Digit Queries** - Find digit at position in infinite sequence
+19. **Grid Paths** - Count paths in grid with obstacles
 
 ## Key Concepts
 - Basic math and number theory
