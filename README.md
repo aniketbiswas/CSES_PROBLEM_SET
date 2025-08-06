@@ -2,28 +2,78 @@
 
 This repository contains my solutions to problems from the [CSES Problem Set](https://cses.fi/problemset/).
 
-## Progress Tracker
+## Repository Structure
 
-### Introductory Problems
-- [x] Weird Algorithm (`WeirdAlgo.cpp`)
-- [x] Missing Number (`MissingNumber.cpp`)
-- [x] Repetitions (`Repititions.cpp`)
-- [x] Increasing Array (`IncreasingArray.cpp`)
-- [x] Permutations (`BeautifulPermutation.cpp`)
-- [x] Number Spiral (`NumberSpiral.cpp`)
-- [x] Two Knights (`TwoKnights.cpp`)
-- [x] Two Sets (`TwoSets.cpp`, `TwoSets.rb`)
-- [x] Bit Strings (`BitString.cpp`)
-- [x] Trailing Zeros (`TrailingZeros.cpp`)
-- [x] Coin Piles (`CoinPiles.cpp`)
-- [x] Palindrome Reorder (`ReorderPalindrome.cpp`)
-- [x] Gray Code (`GrayCode.cpp`)
+```
+CSES/
+├── Introductory_Problems/     # Basic algorithmic problems (13/13)
+├── Sorting_and_Searching/     # Array and search problems (4/35)
+├── Dynamic_Programming/       # DP problems (0/19)
+├── Graph_Algorithms/         # Graph theory problems (0/36)
+├── Range_Queries/            # Segment trees, BIT (0/19)
+├── Tree_Algorithms/          # Tree-based problems (0/16)
+├── Mathematics/              # Number theory, combinatorics (0/31)
+├── String_Algorithms/        # String processing (0/17)
+├── Geometry/                 # Computational geometry (0/7)
+└── Advanced_Techniques/      # Advanced algorithms (0/24)
+```
 
-### Sorting and Searching
-- [x] Distinct Numbers (`DistinctNumCount.cpp`)
-- [x] Apartments (`Apartments.cpp`)
-- [x] Ferris Wheel (`FerrisWheel.cpp`)
-- [x] Concert Tickets (`ConcertTickets.cpp`)
+## Progress Overview
+
+**Total Solved: 17/300** 🎯
+
+### [Introductory Problems](Introductory_Problems/) - 13/13 ✅
+- [x] Weird Algorithm
+- [x] Missing Number  
+- [x] Repetitions
+- [x] Increasing Array
+- [x] Permutations
+- [x] Number Spiral
+- [x] Two Knights
+- [x] Two Sets
+- [x] Bit Strings
+- [x] Trailing Zeros
+- [x] Coin Piles
+- [x] Palindrome Reorder
+- [x] Gray Code
+
+### [Sorting and Searching](Sorting_and_Searching/) - 4/35 🔄
+- [x] Distinct Numbers
+- [x] Apartments
+- [x] Ferris Wheel  
+- [x] Concert Tickets
+- [ ] Restaurant Customers
+- [ ] Movie Festival
+- [ ] Sum of Two Values
+- [ ] Maximum Subarray Sum
+- [ ] Stick Lengths
+- [ ] Playlist
+- [ ] Towers
+- [ ] Traffic Lights
+- [ ] Room Allocation
+- [ ] Factory Machines
+- [ ] Tasks and Deadlines
+- [ ] Reading Books
+- [ ] Sum of Three Values
+- [ ] Sum of Four Values
+- [ ] Nearest Smaller Values
+- [ ] Subarray Sums I
+- [ ] Subarray Sums II
+- [ ] Subarray Divisibility
+- [ ] Array Division
+- [ ] Sliding Window Median
+- [ ] Sliding Window Cost
+- [ ] Movie Festival II
+- [ ] Maximum Subarray Sum II
+
+### [Dynamic Programming](Dynamic_Programming/) - 0/19 📝
+### [Graph Algorithms](Graph_Algorithms/) - 0/36 📝  
+### [Range Queries](Range_Queries/) - 0/19 📝
+### [Tree Algorithms](Tree_Algorithms/) - 0/16 📝
+### [Mathematics](Mathematics/) - 0/31 📝
+### [String Algorithms](String_Algorithms/) - 0/17 📝
+### [Geometry](Geometry/) - 0/7 📝
+### [Advanced Techniques](Advanced_Techniques/) - 0/24 📝
 
 ## Notes
 - All solutions are written in C++ unless otherwise specified
