@@ -2,19 +2,22 @@
 
 Graph theory problems including traversal, shortest paths, and connectivity.
 
-## Key Concepts
-- DFS and BFS
-- Shortest path algorithms (Dijkstra, Floyd-Warshall)
-- Minimum spanning trees
-- Topological sorting
-- Strongly connected components
-- Maximum flow algorithms
+## Problems Solved (4/36)
 
-## Problems to Solve
-- Counting Rooms
-- Labyrinth
-- Building Roads
-- Message Route
+1. **Counting Rooms** (`CountingRooms.cpp`) - Count connected components using DFS/BFS
+2. **Labyrinth** (`Labyrinth.cpp`) - Find shortest path in grid maze using BFS
+3. **Building Roads** (`BuildingRoads.cpp`) - Connect all cities using minimum roads
+4. **Message Route** (`MessageRoute.cpp`) - Find shortest path between two nodes
+
+## Key Concepts
+- DFS and BFS traversal
+- Connected components
+- Shortest path algorithms (BFS for unweighted graphs)
+- Grid-based pathfinding
+- Union-Find (Disjoint Set Union)
+- Graph representation (adjacency lists/matrices)
+
+## Problems Remaining (32)
 - Building Teams
 - Round Trip
 - Monsters

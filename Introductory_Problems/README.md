@@ -2,7 +2,7 @@
 
 This section contains basic algorithmic thinking and implementation problems.
 
-## Problems Solved (13/19)
+## Problems Solved (18/19)
 
 1. **Weird Algorithm** (`WeirdAlgo.cpp`) - Collatz conjecture simulation
 2. **Missing Number** (`MissingNumber.cpp`) - Find missing number in sequence
@@ -17,19 +17,27 @@ This section contains basic algorithmic thinking and implementation problems.
 11. **Coin Piles** (`CoinPiles.cpp`) - Determine if coin piles can be emptied
 12. **Palindrome Reorder** (`ReorderPalindrome.cpp`) - Rearrange string to palindrome
 13. **Gray Code** (`GrayCode.cpp`) - Generate Gray code sequence
+14. **Creating Strings** (`CreatingString.cpp`) - Generate all permutations of string
+15. **Apple Division** (`AppleDivision.cpp`) - Minimize difference between two groups
+16. **Digit Queries** (`DigitQueries.cpp`) - Find digit at position in infinite sequence
+17. **Grid Paths** (`GridPathDescription.cpp`) - Count paths in grid with obstacles
+18. **Knight Moves Grid** (`KnightMovesGrid.cpp`) - Minimum knight moves to each square
 
-## Problems Remaining (6)
+## Problems Remaining (1)
 
-14. **Tower of Hanoi** - Classic recursive problem
-15. **Creating Strings** - Generate all permutations of string
-16. **Apple Division** - Minimize difference between two groups
-17. **Chessboard and Queens** - N-queens problem
-18. **Digit Queries** - Find digit at position in infinite sequence
-19. **Grid Paths** - Count paths in grid with obstacles
+19. **Chessboard and Queens** - N-queens problem
+
+## Additional Problems Solved
+- **String Reorder** (`StringReorder.cpp`) - Rearrange string with no adjacent duplicates
+- **Grid Coloring** (`GridColoring1.cpp`) - Color grid cells avoiding adjacent same colors
 
 ## Key Concepts
 - Basic math and number theory
-- String manipulation
+- String manipulation and permutations
 - Bit manipulation
 - Pattern recognition
 - Mathematical induction
+- Backtracking and DFS
+- Graph algorithms (BFS for shortest paths)
+- Dynamic programming basics
+- Greedy algorithms

@@ -6,10 +6,10 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 
 ```
 CSES/
-├── Introductory_Problems/     # Basic algorithmic problems (13/19)
+├── Introductory_Problems/     # Basic algorithmic problems (18/19)
 ├── Sorting_and_Searching/     # Array and search problems (4/35)
 ├── Dynamic_Programming/       # DP problems (0/19)
-├── Graph_Algorithms/         # Graph theory problems (0/36)
+├── Graph_Algorithms/         # Graph theory problems (4/36)
 ├── Range_Queries/            # Segment trees, BIT (0/19)
 ├── Tree_Algorithms/          # Tree-based problems (0/16)
 ├── Mathematics/              # Number theory, combinatorics (0/31)
@@ -20,9 +20,9 @@ CSES/
 
 ## Progress Overview
 
-**Total Solved: 17/323** 🎯
+**Total Solved: 26/323** 🎯
 
-### [Introductory Problems](Introductory_Problems/) - 13/19 🔄
+### [Introductory Problems](Introductory_Problems/) - 18/19 �
 - [x] Weird Algorithm
 - [x] Missing Number  
 - [x] Repetitions
@@ -37,11 +37,11 @@ CSES/
 - [x] Palindrome Reorder
 - [x] Gray Code
 - [ ] Tower of Hanoi
-- [ ] Creating Strings
-- [ ] Apple Division
+- [x] Creating Strings
+- [x] Apple Division
 - [ ] Chessboard and Queens
-- [ ] Digit Queries
-- [ ] Grid Paths
+- [x] Digit Queries
+- [x] Grid Paths
 
 ### [Sorting and Searching](Sorting_and_Searching/) - 4/35 🔄
 - [x] Distinct Numbers
@@ -71,6 +71,44 @@ CSES/
 - [ ] Sliding Window Cost
 - [ ] Movie Festival II
 - [ ] Maximum Subarray Sum II
+
+### [Graph Algorithms](Graph_Algorithms/) - 4/36 🔄
+- [x] Counting Rooms
+- [x] Labyrinth
+- [x] Building Roads
+- [x] Message Route
+- [ ] Building Teams
+- [ ] Round Trip
+- [ ] Monsters
+- [ ] Shortest Routes I
+- [ ] Shortest Routes II
+- [ ] High Score
+- [ ] Flight Discount
+- [ ] Cycle Finding
+- [ ] Flight Routes
+- [ ] Round Trip II
+- [ ] Course Schedule
+- [ ] Longest Flight Route
+- [ ] Game Routes
+- [ ] Investigation
+- [ ] Planets Queries I
+- [ ] Planets Queries II
+- [ ] Planets Cycles
+- [ ] Road Reparation
+- [ ] Road Construction
+- [ ] Flight Routes Check
+- [ ] Planets and Kingdoms
+- [ ] Giant Pizza
+- [ ] Coin Collector
+- [ ] Mail Delivery
+- [ ] De Bruijn Sequence
+- [ ] Teleporters Path
+- [ ] Hamiltonian Flights
+- [ ] Knight's Tour
+- [ ] Download Speed
+- [ ] Police Chase
+- [ ] School Dance
+- [ ] Distinct Routes
 
 ### [Dynamic Programming](Dynamic_Programming/) - 0/19 📝
 ### [Graph Algorithms](Graph_Algorithms/) - 0/36 📝  
