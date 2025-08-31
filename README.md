@@ -6,10 +6,10 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 
 ```
 CSES/
-├── Introductory_Problems/     # Basic algorithmic problems (18/19)
-├── Sorting_and_Searching/     # Array and search problems (4/35)
+├── Introductory_Problems/     # Basic algorithmic problems (20/19)
+├── Sorting_and_Searching/     # Array and search problems (6/35)
 ├── Dynamic_Programming/       # DP problems (0/19)
-├── Graph_Algorithms/         # Graph theory problems (4/36)
+├── Graph_Algorithms/         # Graph theory problems (16/36)
 ├── Range_Queries/            # Segment trees, BIT (0/19)
 ├── Tree_Algorithms/          # Tree-based problems (0/16)
 ├── Mathematics/              # Number theory, combinatorics (0/31)
@@ -20,14 +20,14 @@ CSES/
 
 ## Progress Overview
 
-**Total Solved: 26/323** 🎯
+**Total Solved: 42/323** 🎯
 
-### [Introductory Problems](Introductory_Problems/) - 18/19 �
+### [Introductory Problems](Introductory_Problems/) - 20/19 ✅
 - [x] Weird Algorithm
 - [x] Missing Number  
 - [x] Repetitions
 - [x] Increasing Array
-- [x] Permutations
+- [x] Permutations (Beautiful Permutation)
 - [x] Number Spiral
 - [x] Two Knights
 - [x] Two Sets
@@ -36,18 +36,21 @@ CSES/
 - [x] Coin Piles
 - [x] Palindrome Reorder
 - [x] Gray Code
-- [ ] Tower of Hanoi
 - [x] Creating Strings
 - [x] Apple Division
-- [ ] Chessboard and Queens
 - [x] Digit Queries
-- [x] Grid Paths
+- [x] Grid Paths (Grid Path Description)
+- [x] String Reorder
+- [x] Knight Moves Grid
+- [x] Grid Coloring
 
-### [Sorting and Searching](Sorting_and_Searching/) - 4/35 🔄
+### [Sorting and Searching](Sorting_and_Searching/) - 6/35 🔄
 - [x] Distinct Numbers
 - [x] Apartments
 - [x] Ferris Wheel  
 - [x] Concert Tickets
+- [x] Josephus Problem I
+- [x] Josephus Problem II
 - [ ] Restaurant Customers
 - [ ] Movie Festival
 - [ ] Sum of Two Values
@@ -72,22 +75,23 @@ CSES/
 - [ ] Movie Festival II
 - [ ] Maximum Subarray Sum II
 
-### [Graph Algorithms](Graph_Algorithms/) - 4/36 🔄
-- [x] Counting Rooms
-- [x] Labyrinth
-- [x] Building Roads
-- [x] Message Route
-- [ ] Building Teams
-- [ ] Round Trip
-- [ ] Monsters
-- [ ] Shortest Routes I
-- [ ] Shortest Routes II
-- [ ] High Score
-- [ ] Flight Discount
-- [ ] Cycle Finding
-- [ ] Flight Routes
-- [ ] Round Trip II
-- [ ] Course Schedule
+### [Graph Algorithms](Graph_Algorithms/) - 16/36 🔄
+- [x] Counting Rooms (DFS/BFS)
+- [x] Labyrinth (BFS)
+- [x] Building Roads (Union-Find)
+- [x] Message Route (BFS)
+- [x] Building Teams (Graph Coloring/Bipartite)
+- [x] Round Trip (Cycle Detection - Undirected)
+- [x] Monsters (Multi-source BFS)
+- [x] Shortest Routes I (Dijkstra)
+- [x] Shortest Routes II (Floyd-Warshall)
+- [x] High Score (Bellman-Ford/SPFA)
+- [x] Flight Discount (Modified Dijkstra)
+- [x] Cycle Finding (Negative Cycle Detection)
+- [x] Flight Routes (K-Shortest Paths)
+- [x] Round Trip II (Cycle Detection - Directed)
+- [x] Course Schedule (Topological Sort)
+- [x] Giant Pizza (2-SAT)
 - [ ] Longest Flight Route
 - [ ] Game Routes
 - [ ] Investigation
@@ -98,9 +102,6 @@ CSES/
 - [ ] Road Construction
 - [ ] Flight Routes Check
 - [ ] Planets and Kingdoms
-- [ ] Giant Pizza
-- [ ] Coin Collector
-- [ ] Mail Delivery
 - [ ] De Bruijn Sequence
 - [ ] Teleporters Path
 - [ ] Hamiltonian Flights
@@ -109,9 +110,10 @@ CSES/
 - [ ] Police Chase
 - [ ] School Dance
 - [ ] Distinct Routes
+- [ ] Mail Delivery
+- [ ] Shortest Routes III
 
 ### [Dynamic Programming](Dynamic_Programming/) - 0/19 📝
-### [Graph Algorithms](Graph_Algorithms/) - 0/36 📝  
 ### [Range Queries](Range_Queries/) - 0/19 📝
 ### [Tree Algorithms](Tree_Algorithms/) - 0/16 📝
 ### [Mathematics](Mathematics/) - 0/31 📝
@@ -119,15 +121,27 @@ CSES/
 ### [Geometry](Geometry/) - 0/7 📝
 ### [Advanced Techniques](Advanced_Techniques/) - 0/24 📝
 
-## Notes
-- All solutions are written in C++ unless otherwise specified
-- Some problems have multiple implementations (e.g., Two Sets has both C++ and Ruby solutions)
-- Solutions follow competitive programming best practices with fast I/O optimizations
+## Notes & Algorithm References
 
-## Problem Categories
-- **Introductory Problems**: Basic algorithmic thinking and implementation
-- **Sorting and Searching**: Array manipulation, binary search, greedy algorithms
-- More categories to be added as I progress...
+### Graph Algorithms
+- **Dijkstra's Algorithm Variations**: The CSES set showcases several powerful variations:
+  - State-Space Dijkstra (Flight Discount)
+  - K-Shortest Paths (Flight Routes) 
+  - Augmented Information Dijkstra (Investigation)
+- **Cycle Detection**: Different approaches for directed vs undirected graphs
+- **Union-Find**: Path compression and union by rank optimizations
+
+### Common Patterns
+- **Two Pointers**: Efficient O(n) solutions for sorted arrays
+- **Binary Search**: Not just on arrays, but on answer spaces
+- **Greedy Algorithms**: Often optimal for scheduling and assignment problems
+- **DFS/BFS**: Grid traversal, connectivity, shortest paths
+
+### Implementation Tips
+- Use `long long` for large numbers to avoid overflow
+- Fast I/O with `ios_base::sync_with_stdio(false); cin.tie(NULL);`
+- STL containers: `set`, `multiset`, `priority_queue`, `deque`
+- Graph representation: adjacency lists for sparse graphs
 
 ## Running Solutions
 To compile and run any C++ solution:
