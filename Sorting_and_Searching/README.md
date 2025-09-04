@@ -2,15 +2,15 @@
 
 This section focuses on array manipulation, binary search, greedy algorithms, and efficient data structures.
 
-## Progress: 6/35 ✅
+## Progress: 16/35 ✅
 
 ## Key Concepts
 - **Sorting Algorithms**: Built-in sort, custom comparators
 - **Binary Search**: Lower/upper bound, custom search predicates
 - **Two Pointers**: Efficient array traversal techniques
 - **Greedy Algorithms**: Optimal choice strategies
-- **Data Structures**: Set, multiset, priority queue
-- **Time Complexity**: Optimization from O(n²) to O(n log n)
+- **Data Structures**: Set, multiset, priority queue, sliding window
+- **Advanced Patterns**: Coordinate compression, sweep line algorithms
 
 ## Solved Problems
 
@@ -21,6 +21,24 @@ This section focuses on array manipulation, binary search, greedy algorithms, an
 
 ### Binary Search and Data Structures  
 - ✅ **Concert Tickets** (`ConcertTickets.cpp`) - Upper bound with multiset
+- ✅ **Sum of Two Values** (`SumOfTwoValues.cpp`) - Two pointers after sorting
+- ✅ **Towers** (`Towers.cpp`) - Greedy with binary search (LIS variant)
+
+### Greedy Algorithms
+- ✅ **Movie Festival** (`MovieFestival.cpp`) - Activity selection (sort by end time)
+- ✅ **Restaurant Customers** (`RestaurantCustomers.cpp`) - Sweep line algorithm
+- ✅ **Stick Lengths** (`StickLengths.cpp`) - Median minimizes absolute deviations
+
+### Advanced Array Techniques
+- ✅ **Maximum Subarray Sum** (`MaximumSubarraySum.cpp`) - Kadane's algorithm
+- ✅ **Missing Coin Sum** (`MissingCoinSum.cpp`) - Greedy gap-finding
+- ✅ **Collecting Numbers** (`CollectingNumbers.cpp`) - Position tracking
+
+### Sliding Window & Dynamic Structures
+- ✅ **Playlist** (`Playlist.cpp`) - Sliding window with hash map
+- ✅ **Traffic Lights** (`TrafficLights.cpp`) - Dynamic segments with set/multiset
+
+### Mathematical Sequences
 - ✅ **Josephus Problem I** (`JosephusProblem1.cpp`) - Simulation with queue
 - ✅ **Josephus Problem II** (`JosephusProblem2.cpp`) - Advanced Josephus variant
 
@@ -41,29 +59,55 @@ while (left < right) {
 }
 ```
 
-### Binary Search on Answer
-Pattern for optimization problems where we can check if a solution is feasible:
+### Sliding Window with Hash Map
+Pattern for longest substring problems (Playlist):
 ```cpp
-int low = 0, high = MAX_ANSWER;
-while (low < high) {
-    int mid = (low + high) / 2;
-    if (canAchieve(mid)) {
-        high = mid;
+map<int, int> lastPos;
+int left = 0, best = 0;
+for (int right = 0; right < n; right++) {
+    if (lastPos.count(arr[right]) && lastPos[arr[right]] >= left) {
+        left = lastPos[arr[right]] + 1;
+    }
+    lastPos[arr[right]] = right;
+    best = max(best, right - left + 1);
+}
+```
+
+### Sweep Line Algorithm
+For event processing (Restaurant Customers):
+```cpp
+vector<pair<int, int>> events; // {time, type}
+sort(events.begin(), events.end());
+int active = 0, maxActive = 0;
+for (auto [time, type] : events) {
+    active += type; // +1 for arrival, -1 for departure
+    maxActive = max(maxActive, active);
+}
+```
+
+### Greedy with Binary Search
+For optimal placement problems (Towers):
+```cpp
+vector<int> towers; // maintain sorted invariant
+for (int cube : cubes) {
+    auto it = lower_bound(towers.begin(), towers.end(), cube + 1);
+    if (it == towers.end()) {
+        towers.push_back(cube);
     } else {
-        low = mid + 1;
+        *it = cube;
     }
 }
 ```
 
-## Remaining Problems (29/35)
-- [ ] Restaurant Customers
-- [ ] Movie Festival
-- [ ] Sum of Two Values
-- [ ] Maximum Subarray Sum
-- [ ] Stick Lengths
-- [ ] Playlist
-- [ ] Towers
-- [ ] Traffic Lights
+## Key Insights by Problem
+
+- **Movie Festival**: Sort by end time for activity selection
+- **Missing Coin Sum**: If you can make {1..k}, adding coin c≤k+1 extends to {1..k+c}
+- **Towers**: Each tower top represents minimum value that can be placed
+- **Traffic Lights**: Maintain segments dynamically with set + multiset
+- **Playlist**: Track last position of each element for sliding window
+
+## Remaining Problems (19/35)
 - [ ] Room Allocation
 - [ ] Factory Machines
 - [ ] Tasks and Deadlines

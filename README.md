@@ -6,8 +6,8 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 
 ```
 CSES/
-├── Introductory_Problems/     # Basic algorithmic problems (20/19)
-├── Sorting_and_Searching/     # Array and search problems (6/35)
+├── Introductory_Problems/     # Basic algorithmic problems (20/20)
+├── Sorting_and_Searching/     # Array and search problems (16/35)
 ├── Dynamic_Programming/       # DP problems (0/19)
 ├── Graph_Algorithms/         # Graph theory problems (16/36)
 ├── Range_Queries/            # Segment trees, BIT (0/19)
@@ -20,9 +20,9 @@ CSES/
 
 ## Progress Overview
 
-**Total Solved: 42/323** 🎯
+**Total Solved: 53/323** 🎯
 
-### [Introductory Problems](Introductory_Problems/) - 20/19 ✅
+### [Introductory Problems](Introductory_Problems/) - 20/20 ✅
 - [x] Weird Algorithm
 - [x] Missing Number  
 - [x] Repetitions
@@ -44,21 +44,23 @@ CSES/
 - [x] Knight Moves Grid
 - [x] Grid Coloring
 
-### [Sorting and Searching](Sorting_and_Searching/) - 6/35 🔄
+### [Sorting and Searching](Sorting_and_Searching/) - 16/35 🔄
 - [x] Distinct Numbers
 - [x] Apartments
 - [x] Ferris Wheel  
 - [x] Concert Tickets
+- [x] Restaurant Customers
+- [x] Movie Festival
+- [x] Sum of Two Values
+- [x] Maximum Subarray Sum
+- [x] Stick Lengths
+- [x] Missing Coin Sum
+- [x] Collecting Numbers
+- [x] Playlist
+- [x] Towers
+- [x] Traffic Lights
 - [x] Josephus Problem I
 - [x] Josephus Problem II
-- [ ] Restaurant Customers
-- [ ] Movie Festival
-- [ ] Sum of Two Values
-- [ ] Maximum Subarray Sum
-- [ ] Stick Lengths
-- [ ] Playlist
-- [ ] Towers
-- [ ] Traffic Lights
 - [ ] Room Allocation
 - [ ] Factory Machines
 - [ ] Tasks and Deadlines
@@ -131,17 +133,37 @@ CSES/
 - **Cycle Detection**: Different approaches for directed vs undirected graphs
 - **Union-Find**: Path compression and union by rank optimizations
 
+### Sorting and Searching Patterns
+- **Two Pointers**: O(n) solutions for sorted arrays (Sum of Two Values, Ferris Wheel)
+- **Sliding Window**: Variable-size windows with hash maps (Playlist)
+- **Sweep Line**: Event processing algorithms (Restaurant Customers)
+- **Binary Search on Answer**: Find optimal values through binary search
+- **Greedy + Binary Search**: Optimal placement with sorted structures (Towers)
+- **Kadane's Algorithm**: Maximum subarray sum in O(n)
+- **Median Property**: Minimizes sum of absolute deviations (Stick Lengths)
+
+### Advanced Data Structures
+- **Set/Multiset**: Sorted containers with O(log n) operations
+- **Dynamic Segments**: Maintaining intervals with set operations (Traffic Lights)
+- **Position Tracking**: Hash maps for last occurrence positions
+- **Coordinate Compression**: Map large values to small indices
+
+### Mathematical Insights
+- **Missing Coin Sum**: Gap-finding with consecutive sum property
+- **Activity Selection**: Sort by end time for greedy scheduling
+- **Josephus Problem**: Simulation vs mathematical formula approaches
+
 ### Common Patterns
-- **Two Pointers**: Efficient O(n) solutions for sorted arrays
-- **Binary Search**: Not just on arrays, but on answer spaces
 - **Greedy Algorithms**: Often optimal for scheduling and assignment problems
 - **DFS/BFS**: Grid traversal, connectivity, shortest paths
+- **Dynamic Programming**: Optimal substructure and overlapping subproblems
 
 ### Implementation Tips
 - Use `long long` for large numbers to avoid overflow
 - Fast I/O with `ios_base::sync_with_stdio(false); cin.tie(NULL);`
 - STL containers: `set`, `multiset`, `priority_queue`, `deque`
 - Graph representation: adjacency lists for sparse graphs
+- Binary search: `lower_bound` vs `upper_bound` for different constraints
 
 ## Running Solutions
 To compile and run any C++ solution:
