@@ -7,7 +7,7 @@ This repository contains my solutions to problems from the [CSES Problem Set](ht
 ```
 CSES/
 ├── Introductory_Problems/     # Basic algorithmic problems (20/20)
-├── Sorting_and_Searching/     # Array and search problems (16/35)
+├── Sorting_and_Searching/     # Array and search problems (25/35)
 ├── Dynamic_Programming/       # DP problems (0/19)
 ├── Graph_Algorithms/         # Graph theory problems (16/36)
 ├── Range_Queries/            # Segment trees, BIT (0/19)
@@ -20,7 +20,7 @@ CSES/
 
 ## Progress Overview
 
-**Total Solved: 53/323** 🎯
+**Total Solved: 62/323** 🎯
 
 ### [Introductory Problems](Introductory_Problems/) - 20/20 ✅
 - [x] Weird Algorithm
@@ -44,7 +44,7 @@ CSES/
 - [x] Knight Moves Grid
 - [x] Grid Coloring
 
-### [Sorting and Searching](Sorting_and_Searching/) - 16/35 🔄
+### [Sorting and Searching](Sorting_and_Searching/) - 25/35 🔄
 - [x] Distinct Numbers
 - [x] Apartments
 - [x] Ferris Wheel  
@@ -61,17 +61,17 @@ CSES/
 - [x] Traffic Lights
 - [x] Josephus Problem I
 - [x] Josephus Problem II
-- [ ] Room Allocation
-- [ ] Factory Machines
-- [ ] Tasks and Deadlines
-- [ ] Reading Books
+- [x] Room Allocation
+- [x] Factory Machines
+- [x] Tasks and Deadlines
+- [x] Reading Books
+- [x] Array Division
+- [x] Subarray Sums I
+- [x] Subarray Sums II  
+- [x] Nearest Smaller Values
+- [x] Distinct Value Subarrays
 - [ ] Sum of Three Values
 - [ ] Sum of Four Values
-- [ ] Nearest Smaller Values
-- [ ] Subarray Sums I
-- [ ] Subarray Sums II
-- [ ] Subarray Divisibility
-- [ ] Array Division
 - [ ] Sliding Window Median
 - [ ] Sliding Window Cost
 - [ ] Movie Festival II
@@ -124,6 +124,11 @@ CSES/
 ### [Advanced Techniques](Advanced_Techniques/) - 0/24 📝
 
 ## Notes & Algorithm References
+
+### Documentation
+- **[Building Intuition Guide](docs/building-intuition.md)**: Systematic approach to pattern recognition and problem-solving
+- **[Binary Lifting Search](docs/binary-lifting-search.md)**: Advanced binary search technique with bit-by-bit construction
+- **[Dijkstra Variations](docs/dijkstra-variations.md)**: State-space modifications and k-shortest paths
 
 ### Graph Algorithms
 - **Dijkstra's Algorithm Variations**: The CSES set showcases several powerful variations:

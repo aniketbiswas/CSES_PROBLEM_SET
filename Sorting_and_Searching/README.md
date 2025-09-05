@@ -2,7 +2,7 @@
 
 This section focuses on array manipulation, binary search, greedy algorithms, and efficient data structures.
 
-## Progress: 16/35 ✅
+## Progress: 25/35 ✅
 
 ## Key Concepts
 - **Sorting Algorithms**: Built-in sort, custom comparators
@@ -41,6 +41,25 @@ This section focuses on array manipulation, binary search, greedy algorithms, an
 ### Mathematical Sequences
 - ✅ **Josephus Problem I** (`JosephusProblem1.cpp`) - Simulation with queue
 - ✅ **Josephus Problem II** (`JosephusProblem2.cpp`) - Advanced Josephus variant
+
+### Binary Search on Answer
+- ✅ **Room Allocation** (`RoomAllocation.cpp`) - Event-based room assignment with sweep line
+- ✅ **Factory Machines** (`FactoryMachines.cpp`) - Binary search on time with production capacity check
+- ✅ **Array Division** (`ArrayDivision.cpp`) - Binary search on maximum sum with greedy validation
+
+### Advanced Optimization
+- ✅ **Tasks and Deadlines** (`TasksAndDeadlines.cpp`) - Greedy scheduling by duration
+- ✅ **Reading Books** (`ReadingBooks.cpp`) - Load balancing with bottleneck analysis
+
+### Prefix Sums and Hash Maps
+- ✅ **Subarray Sums I** (`SubarraySum1.cpp`) - Sliding window technique for positive arrays
+- ✅ **Subarray Sums II** (`SubarraySum2.cpp`) - Hash map + prefix sums for any integers
+
+### Stack Algorithms  
+- ✅ **Nearest Smaller Values** (`NearestSmallerValues.cpp`) - Monotonic stack for nearest element queries
+
+### Additional Problems
+- ✅ **Distinct Value Subarrays** (`DistinctValueSubarrays.cpp`) - Advanced sliding window
 
 ## Algorithm Patterns
 
@@ -99,6 +118,52 @@ for (int cube : cubes) {
 }
 ```
 
+### Binary Search on Answer
+For optimization problems (Factory Machines, Array Division):
+```cpp
+bool check(ll mid) {
+    // Can we achieve goal with parameter mid?
+    return feasible;
+}
+
+ll left = theoretical_minimum;
+ll right = theoretical_maximum;
+while (left < right) {
+    ll mid = left + (right - left) / 2;
+    if (check(mid)) {
+        right = mid;  // Try smaller values
+    } else {
+        left = mid + 1;  // Need larger values
+    }
+}
+```
+
+### Monotonic Stack
+For nearest element problems (Nearest Smaller Values):
+```cpp
+stack<int> st;
+for (int i = 0; i < n; i++) {
+    while (!st.empty() && arr[st.top()] >= arr[i]) {
+        st.pop();  // Remove larger elements
+    }
+    result[i] = st.empty() ? 0 : st.top() + 1;
+    st.push(i);
+}
+```
+
+### Prefix Sums with Hash Map
+For subarray sum problems (Subarray Sums II):
+```cpp
+map<ll, int> prefixCount;
+prefixCount[0] = 1;
+ll prefixSum = 0, result = 0;
+for (int i = 0; i < n; i++) {
+    prefixSum += arr[i];
+    result += prefixCount[prefixSum - target];
+    prefixCount[prefixSum]++;
+}
+```
+
 ## Key Insights by Problem
 
 - **Movie Festival**: Sort by end time for activity selection
@@ -106,18 +171,19 @@ for (int cube : cubes) {
 - **Towers**: Each tower top represents minimum value that can be placed
 - **Traffic Lights**: Maintain segments dynamically with set + multiset
 - **Playlist**: Track last position of each element for sliding window
+- **Factory Machines**: Binary search on time + greedy capacity checking
+- **Tasks and Deadlines**: Sort by duration (shortest first) for optimal scheduling
+- **Reading Books**: Answer = max(total_time, 2 * longest_book) - two bottlenecks
+- **Room Allocation**: Event-based sweep line with available room stack
+- **Array Division**: Binary search on max sum + greedy subarray validation  
+- **Subarray Sums I**: Sliding window works for positive arrays only
+- **Subarray Sums II**: Hash map + prefix sums handles negative numbers
+- **Nearest Smaller Values**: Monotonic stack maintains increasing elements
 
-## Remaining Problems (19/35)
-- [ ] Room Allocation
-- [ ] Factory Machines
-- [ ] Tasks and Deadlines
-- [ ] Reading Books
+## Remaining Problems (10/35)
 - [ ] Sum of Three Values
 - [ ] Sum of Four Values
-- [ ] Nearest Smaller Values
-- [ ] Subarray Sums I & II
 - [ ] Subarray Divisibility
-- [ ] Array Division
 - [ ] Sliding Window Median
 - [ ] Sliding Window Cost
 - [ ] Movie Festival II

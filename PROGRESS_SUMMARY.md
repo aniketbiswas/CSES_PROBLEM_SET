@@ -2,13 +2,20 @@
 
 ## 🎯 **Major Milestone Achieved!**
 
-**Total Problems Solved: 53/323 (16.4%)**
+**Total Problems Solved: 62/323 (19.2%)**
 
 This represents tremendous progress in competitive programming fundamentals!
 
 ## 📈 **Category Breakdown**
 
-### 🏆 **Sorting and Searching - 16/35 (45.7%)**
+### 🔄 **Sorting and Searching - 25/35 (71%)**
+Strong progress with excellent pattern recognition! Recently mastered:
+- **Binary search on answer** (Factory Machines, Array Division)
+- **Advanced greedy algorithms** (Tasks & Deadlines, Reading Books)  
+- **Prefix sums + hash maps** (Subarray Sums II)
+- **Sliding window optimization** (Subarray Sums I)
+- **Stack algorithms** (Nearest Smaller Values)
+- **Event-based algorithms** (Room Allocation)
 **Recently Added Problems:**
 - Restaurant Customers (Sweep Line Algorithm)
 - Movie Festival (Greedy Activity Selection) 
